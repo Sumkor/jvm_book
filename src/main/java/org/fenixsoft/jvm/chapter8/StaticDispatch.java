@@ -2,6 +2,8 @@ package org.fenixsoft.jvm.chapter8;
 
 /**
  * 方法静态分派演示
+ * 在重载时是通过参数的静态类型而不是实际类型作为判定依据
+ *
  * @author zzm
  */
 public class StaticDispatch {

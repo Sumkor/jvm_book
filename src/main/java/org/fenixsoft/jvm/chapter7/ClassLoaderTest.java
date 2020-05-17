@@ -1,9 +1,5 @@
 package org.fenixsoft.jvm.chapter7;
 
-/**
- * @author zzm
- */
-
 import java.io.IOException;
 import java.io.InputStream;
 
