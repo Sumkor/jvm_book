@@ -1,4 +1,4 @@
-package com.sumkor.chapter3;
+package com.sumkor.jvm.chapter3;
 
 /**
  * 强引用：无论任何情况下，只要强引用关系还存在，垃圾收集器就永远不会回收掉被引用的对象。

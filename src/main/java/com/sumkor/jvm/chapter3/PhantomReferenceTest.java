@@ -1,4 +1,4 @@
-package com.sumkor.chapter3;
+package com.sumkor.jvm.chapter3;
 
 import org.junit.Test;
 
