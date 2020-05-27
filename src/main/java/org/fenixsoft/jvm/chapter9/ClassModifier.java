@@ -25,6 +25,9 @@ public class ClassModifier {
     private static final int u1 = 1;
     private static final int u2 = 2;
 
+    /**
+     * 类的字节码对应的byte数组
+     */
     private byte[] classByte;
 
     public ClassModifier(byte[] classByte) {

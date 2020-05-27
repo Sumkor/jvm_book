@@ -16,6 +16,7 @@ public class ClassLoaderTest {
             @Override
             public Class<?> loadClass(String name) throws ClassNotFoundException {
                 try {
+                    // 加载与自己在同一路径下的Class文件
                     String fileName = name.substring(name.lastIndexOf(".") + 1) + ".class";
                     InputStream is = getClass().getResourceAsStream(fileName);
                     if (is == null) {
@@ -23,6 +24,7 @@ public class ClassLoaderTest {
                     }
                     byte[] b = new byte[is.available()];
                     is.read(b);
+                    // 把提交执行的Java类的byte[]数组转变为Class对象
                     return defineClass(name, b, 0, b.length);
                 } catch (IOException e) {
                     throw new ClassNotFoundException(name);
