@@ -15,4 +15,12 @@ public class ClinitTest {
 //        System.out.print(i); // 这句编译器会提示“非法向前引用”
     }
     static int i = 1;
+
+    static {
+        System.out.println(i);
+    }
+
+    public static void main(String[] args) {
+        new ClinitTest();
+    }
 }
